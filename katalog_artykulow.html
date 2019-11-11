@@ -1,0 +1,437 @@
+
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Archiwistyka</title>
+  
+  						
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<style>
+
+
+
+	@media screen and (max-width: 576px) {
+                div.main-text  {
+                      width:90%;
+                  font-size: 2em;
+                  top: 10%;
+                }
+                div.alone-text {
+                      width:90%;
+                      font-size: 2em;
+                      top: 22%;
+                }  
+                div.additional-text {
+                  font-size: 3.5vw;
+                  top: 45%;
+                }
+                .title-font {
+                      font-size: 4vw;
+                }
+                .content-font {
+                      font-size: 3.5vw;
+                }
+                .logo{
+		top: 62%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width:80%;	
+		}
+		.footer-column {
+			padding-top: 10%;	
+		}
+		.foot-ad-font {
+		font-size: 3.5vw;
+                }
+                
+                .left-section {
+                    border-radius: 10px 10px 0 0;
+                }
+                
+                .right-section {
+                    border-radius: 0 0 10px 10px;
+                }
+	}
+
+	@media screen and (min-width: 576px) {
+	  div.main-text {
+	  	top: 20%;
+	    font-size: 3em;
+	  }
+	  div.alone-text {
+	  	top:40%;
+	    font-size: 3em;
+	  }  
+	  div.additional-text {
+	  	top: 50%;
+	    font-size: 3vw;
+	  }
+	  .title-font {
+	  	font-size: 3.5vw;
+	  }
+	  .content-font {
+	  	font-size: 3vw;
+	  }
+	 .footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10% 15% 0 15%;		
+		}
+
+	.foot-ad-font {
+		font-size: 3vw;
+	}
+	}
+
+	@media screen and (min-width: 768px) {	
+			div.main-text {
+			font-size: 5vw;
+			top:0%;
+		  	width:90%;
+		  }  
+		  div.alone-text {
+		  	font-size: 5vw;
+		  	top: 3%;
+		  	width:90%;
+		  }  
+		  div.additional-text {
+		  	top: 45%;
+		    font-size: 1.75vw;
+		  }
+		  .title-font {
+		  	font-size: 2vw;
+		  }
+		  .content-font {
+		  	font-size: 1.75vw;
+		  }
+		  .footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 2% 5% 0 5%;		
+		}
+		.foot-ad-font {
+			font-size: 0.75em;
+		}
+		
+		}
+
+	@media only screen and (max-width: 1200px) {
+		  .centered {
+		    padding-left: 4%;
+                    padding-right: 4%
+		  }
+		}
+
+	@media screen and (min-width: 1200px) {	
+		div.main-text {
+		top:5%;
+		font-size: 3vw;
+	  	width:90%;
+	  }  
+	  div.alone-text {
+	  	top:45%;
+	  	font-size: 3vw;
+	  	width:90%;
+	  }  
+	  div.additional-text {
+	    font-size: 1vw;
+	  }
+	  .title-font {
+	  	font-size: 1.5vw;
+	  }
+	  .content-font {
+	  	font-size: 1vw;
+	  }
+	  .foot-ad-font {
+		font-size: 0.9em;
+	}
+	.footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 2% 2% 0 2%;		
+		}
+	.mar-rig-5 {
+	margin-right: 5px;
+	}
+
+	.mar-lef-5 {
+		margin-left: 5px;
+	}
+	}
+
+	
+	</style>
+
+</head>
+
+
+
+<body>
+<header><!-- <header class="sticky-top"> -->
+
+		<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="centered">
+                <a href="https://www.bip.gov.pl/"><img src="pics/header_logo.png" class="img-fluid pz-kb-logo" alt="ABIP.pl"></a> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="navbar" class="container-fluid bg-light">
+    <div class="container-fluid nav-fill w-100">
+        <nav class="navbar navbar-expand-md navbar-light " role="navigation">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                                                    <li>
+                                                        <div class="pz-search-link">
+                                                        <input class="nav-item pz-search-bar" type="text" placeholder="Szukaj...">
+                                                        </div>
+                                                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" role="button" class="btn btn-default float-left">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                                                            <a  class="nav-link" id="navbarDropdownKatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Katalog</a>
+                                                            <div class="pz-katalog dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownKatalog">
+                                                                <a class="dropdown-item" href="/katalog_firm.html">Katalog produktów</a>
+                                                                <a class="dropdown-item" href="katalog_firm.html">Katalog firm</a>
+                                                            </div>
+                                                    </li>
+                    <li class="nav-item dropdown">
+                                                            <a class="nav-link" id="navbarDropdownTematyka" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tematyka</a>
+                                                            <div class="pz-tematyka dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownTematyka">
+                                                                <a class="dropdown-item" href="#">Archiwistyka cyfrowa i tradycyjna</a>
+                                                                <a class="dropdown-item" href="#">Logistyka</a>
+                                                                <a class="dropdown-item" href="#">Terminologia angielska i niemiecka w archiwistyce</a>
+                                                                <a class="dropdown-item" href="#">Pozostałe</a>
+                                                            </div>
+                                                    </li>
+                                                    <li class="nav-item dropdown">
+                                                            <a class="nav-link" id="navbarDropdownAktualnosci" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aktualności</a>
+                                                            <div class="pz-aktualnosci dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownTematyka">
+                                                                <a class="dropdown-item" href="#">Z kraju</a>
+                                                                <a class="dropdown-item" href="#">Wydawnicze</a>
+                                                                <a class="dropdown-item" href="#">Prawne</a>
+                                                                <a class="dropdown-item" href="#">O serwisie</a>
+                                                            </div>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                        <a href="/login.html" role="button" class="btn btn-default float-left">Zaloguj</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+
+
+</header>
+
+
+	<div  class="centered container-fluid">
+		<div class="row mt-2 mb-3">
+                    <div class="col-sm-6">
+                            <div class="title-font">
+                                <a href="katalog_artykulow.html">
+                                    Aktualności
+                                </a>
+                            </div>
+                        </div>
+                       
+		</div>
+
+		
+		<div  class="row" >
+                    <div class="col-lg-6 col-xl-6">	
+                        <div class="row section pz-mar-1 pz-product-height">
+                            <div class="text-col" >
+                                    <div class="link-font">AKTUALNOŚCI</div>
+                                    <div class="data-font">11.05.2019</div>
+                                    <a href="artykul.html">
+                                        <div class="title-font">Warsztaty i lekcje archiwalne</div>
+                                        <div class="pad-bot-3 content-font">Warsztaty i lekcje archiwalne w archiwach państwowych
+                                        "Dla dzieci i młodzieży, uczniów i studentów, dorosłych i seniorów, pasjonatów 
+                                        i amatorów – archiwa państwowe oferują bogaty wachlarz różnorodnych tematycznie 
+                                        zajęć...
+                                        </div>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-6">	
+                        <div class="row section pz-mar-1 pz-product-height">
+                            <div class="text-col" >
+                                <div class="link-font">AKTUALNOŚCI</div>
+                                <div class="data-font">11.05.2019</div>
+                                <div class="title-font">Warsztaty i lekcje archiwalne</div>
+                                <div class="pad-bot-3 content-font">Warsztaty i lekcje archiwalne w archiwach państwowych
+                                "Dla dzieci i młodzieży, uczniów i studentów, dorosłych i seniorów, pasjonatów 
+                                i amatorów – archiwa państwowe oferują bogaty wachlarz różnorodnych tematycznie 
+                                zajęć...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+	  	
+            
+                
+                    <div class="col-lg-6 col-xl-6">	
+                        <div class="row section pz-mar-1 pz-product-height">
+                            <div class="text-col" >
+                                    <div class="link-font">AKTUALNOŚCI</div>
+                                    <div class="data-font">11.05.2019</div>
+                                    <div class="title-font">Warsztaty i lekcje archiwalne</div>
+                                    <div class="pad-bot-3 content-font">Warsztaty i lekcje archiwalne w archiwach państwowych
+                                    "Dla dzieci i młodzieży, uczniów i studentów, dorosłych i seniorów, pasjonatów 
+                                    i amatorów – archiwa państwowe oferują bogaty wachlarz różnorodnych tematycznie 
+                                    zajęć...
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-6">	
+                        <div class="row section pz-mar-1 pz-product-height">
+                            <div class="text-col" >
+                                    <div class="link-font">AKTUALNOŚCI</div>
+                                    <div class="data-font">11.05.2019</div>
+                                    <div class="title-font">Warsztaty i lekcje archiwalne</div>
+                                    <div class="pad-bot-3 content-font">Warsztaty i lekcje archiwalne w archiwach państwowych
+                                    "Dla dzieci i młodzieży, uczniów i studentów, dorosłych i seniorów, pasjonatów 
+                                    i amatorów – archiwa państwowe oferują bogaty wachlarz różnorodnych tematycznie 
+                                    zajęć...
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center  ">    
+                        <ul class="pagination ">
+                                  <li class="page-item disabled"><a class="page-link" href="#">Poprzednia</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">Następna</a></li>
+                        </ul> 
+                </div>                 
+        </div>
+
+
+
+
+
+
+<footer>
+	<div  style="background-color: #333333">
+		<div class="centered container-fluid">
+			<div  class="row" >
+		  		<div  class="footer-column col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">NASZE POZOSTAŁE PORTALE</div>   				
+		  			<div class="footer-col-1">		  				
+	    				<img class="footer-button" src="pics/dps.png"  alt="dps.pl">    				
+		  			</div>
+		  			<div class="footer-col-1">
+		  				<img class="footer-button" src="pics/arisco.png"  alt="arisco.pl">
+		  			</div>
+		  			<div class="footer-col-1">
+		  				<img class="footer-button" src="pics/azam.png"  alt="azam.pl">
+		  			</div>
+		  		</div>
+
+		  		<div  class="footer-column col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">O NAS</div>   				
+		  			<div class="footer-col-2 foot-ad-font text-justify">Firma ARISCO jest twórcą oprogramowania komputerowego opartego o najnowsze
+                                        technologie informatyczne. Nasze systemy przeznaczone są przede wszystkim dla
+                                        jednostek budżetowych. Działamy na rynku oprogramowania od 1989r.&nbsp;i na obecną
+                                        chwilę&nbsp;z naszych produktów korzysta ponad 3600 instytucji.</div>
+		  		</div>
+
+		  		<div  class="footer-column footer-column-3 col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">KONTAKT</div>  				
+		  			
+		  			<div class="row mb-5">
+                                            <div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+                                                <img class="footer-icon img-fluid" src="pics/telefon.png" alt="telefon"/>
+                                            </div>
+                                            <div class="col-sm-8 col-md-8 col-xs-8">
+                                                <div class="foot-ad-font text-center">tel.: +48 42 648 03 00</div>
+                                                <div class="foot-ad-font text-center">fax: +48 42 648 03 01</div>
+
+                                                
+                                            </div>
+		  			</div>
+
+		  			<div  class="row mb-5" >
+		  				<div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+		  					<img class="footer-icon img-fluid" src="pics/swiat.png" alt="świat">
+		  				</div>
+		  				<div class="col-sm-8 col-md-8 col-xs-8">
+		  					<div class="foot-ad-font text-center">email: biuro@arisco.pl</div>
+		  					<div class="foot-ad-font text-center">strona: www.arisco.pl</div>		  					
+	  										
+	  					</div>
+		  			</div>
+
+					<div  class="row mb-5" >
+		  				<div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+		  					<img class="footer-icon img-fluid" src="pics/lokalizacja.png" alt="lokalizacja">
+		  				</div>
+		  				<div class="col-sm-8 col-md-8 col-xs-8">
+		  					<div class="foot-ad-font text-center">ARISCO Sp. z o.o.</div>
+		  					<div class="foot-ad-font text-center">al. Kościuszki 134</div>
+		  					<div class="foot-ad-font text-center">90-029 Łódź</div>	  					
+                                                                
+ 						</div>
+	  				</div>
+		  		</div>
+		  		
+		  	</div>
+                       
+                        <div class="container text-center">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-skype"></i></a>
+                        </div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="powered-by">
+			
+				Powered by Arisco Sp. z o.o.© Archiwistyka.pl 2008. Wszelkie prawa zastrzeżone
+			
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

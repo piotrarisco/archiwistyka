@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Archiwistyka</title>
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<style>
+
+
+
+	@media screen and (max-width: 576px) {
+	  div.main-text  {
+            width:90%;
+	    font-size: 2em;
+	    top: 10%;
+	  }
+	  div.alone-text {
+	  	width:90%;
+	  	font-size: 2em;
+	  	top: 22%;
+	  }  
+	  div.additional-text {
+	    font-size: 3.5vw;
+	    top: 45%;
+	  }
+	  .title-font {
+	  	font-size: 4vw;
+	  }
+	  .content-font {
+	  	font-size: 3.5vw;
+	  }
+	  .logo{
+		top: 62%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width:80%;	
+		}
+		.footer-column {
+			padding-top: 10%;	
+		}
+		.foot-ad-font {
+		font-size: 3.5vw;
+                }
+		.left-section {
+			border-radius: 10px 10px 0 0;
+		}
+
+		.right-section{
+			border-radius: 0 0 10px 10px;
+			margin-top: 0;
+		}
+                
+                /*CHECKBOX TITLE*/
+                .form-font {
+                    font-size:2.25em;
+                }               
+                
+                /*  TEXT FORM*/
+                .form-control {
+                    height:100px;
+                    font-size:2em;
+                }  
+                
+                 .btn {
+                    width:100%;
+                    height: 100px;
+                    font-size: 2em;
+                }
+                
+                
+            /* CHECKBOX FORM*/
+
+                .checkmark {
+                    
+                    height: 50px;
+                    width: 50px;               
+                }
+                
+                .container {
+                    font-size: 2em;
+                    padding-left: 60px;
+
+                }
+                
+                .checkmark:after {
+                left: 21px;
+                top: 12px;
+                width: 10px;
+                height: 20px;
+                border-width: 0 5px 5px 0;
+              }
+              
+              .checkmark-text {
+                  margin-left: 0px;
+              }
+                
+                
+	}
+
+	@media screen and (min-width: 576px) {
+	  div.main-text {
+	  	top: 20%;
+	    font-size: 3em;
+	  }
+	  div.alone-text {
+	  	top:40%;
+	    font-size: 3em;
+	  }  
+	  div.additional-text {
+	  	top: 50%;
+	    font-size: 3vw;
+	  }
+	  .title-font {
+	  	font-size: 3.5vw;
+	  }
+	  .content-font {
+	  	font-size: 3vw;
+	  }
+	 .footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10% 15% 0 15%;		
+		}
+
+	.foot-ad-font {
+		font-size: 3vw;
+	}
+	}
+
+	@media screen and (min-width: 768px) {	
+			div.main-text {
+			font-size: 5vw;
+			top:0%;
+		  	width:90%;
+		  }  
+		  div.alone-text {
+		  	font-size: 5vw;
+		  	top: 3%;
+		  	width:90%;
+		  }  
+		  div.additional-text {
+		  	top: 45%;
+		    font-size: 1.75vw;
+		  }
+		  .title-font {
+		  	font-size: 2vw;
+		  }
+		  .content-font {
+		  	font-size: 1.75vw;
+		  }
+		  .footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 2% 5% 0 5%;		
+		}
+		.foot-ad-font {
+			font-size: 0.75em;
+		}
+		
+		}
+
+	@media only screen and (max-width: 1200px) {
+		  .centered {
+		    padding-left: 4%;
+                    padding-right: 4%
+		  }
+		}
+
+	@media screen and (min-width: 1200px) {	
+		div.main-text {
+		top:5%;
+		font-size: 3vw;
+	  	width:90%;
+	  }  
+	  div.alone-text {
+	  	top:45%;
+	  	font-size: 3vw;
+	  	width:90%;
+	  }  
+	  div.additional-text {
+	    font-size: 1vw;
+	  }
+	  .title-font {
+	  	font-size: 1.5vw;
+	  }
+	  .content-font {
+	  	font-size: 1vw;
+	  }
+	  .foot-ad-font {
+		font-size: 0.9em;
+	}
+	.footer-column {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 2% 2% 0 2%;		
+		}
+	.left-section, .right-section {
+		margin-bottom: 5%;
+	}
+	}
+
+	
+	</style>
+
+</head>
+
+
+
+<body>
+<header><!-- <header class="sticky-top"> -->
+
+		<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="centered">
+                <a href="https://www.bip.gov.pl/"><img src="pics/header_logo.png" class="img-fluid pz-kb-logo" alt="ABIP.pl"></a> 
+            </div>
+        </div>
+    </div>
+
+
+<div id="navbar" class="container-fluid bg-light">
+    <div class="container-fluid nav-fill w-100">
+        <nav class="navbar navbar-expand-md navbar-light " role="navigation">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                                                    <li>
+                                                        <div class="pz-search-link">
+                                                        <input class="nav-item pz-search-bar" type="text" placeholder="Szukaj...">
+                                                        </div>
+                                                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" role="button" class="btn btn-default float-left">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                                                            <a  class="nav-link" id="navbarDropdownKatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Katalog</a>
+                                                            <div class="pz-katalog dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownKatalog">
+                                                                <a class="dropdown-item" href="/katalog_firm.html">Katalog produktów</a>
+                                                                <a class="dropdown-item" href="katalog_firm.html">Katalog firm</a>
+                                                            </div>
+                                                    </li>
+                    <li class="nav-item dropdown">
+                                                            <a class="nav-link" id="navbarDropdownTematyka" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tematyka</a>
+                                                            <div class="pz-tematyka dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownTematyka">
+                                                                <a class="dropdown-item" href="#">Archiwistyka cyfrowa i tradycyjna</a>
+                                                                <a class="dropdown-item" href="#">Logistyka</a>
+                                                                <a class="dropdown-item" href="#">Terminologia angielska i niemiecka w archiwistyce</a>
+                                                                <a class="dropdown-item" href="#">Pozostałe</a>
+                                                            </div>
+                                                    </li>
+                                                    <li class="nav-item dropdown">
+                                                            <a class="nav-link" id="navbarDropdownAktualnosci" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aktualności</a>
+                                                            <div class="pz-aktualnosci dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownTematyka">
+                                                                <a class="dropdown-item" href="#">Z kraju</a>
+                                                                <a class="dropdown-item" href="#">Wydawnicze</a>
+                                                                <a class="dropdown-item" href="#">Prawne</a>
+                                                                <a class="dropdown-item" href="#">O serwisie</a>
+                                                            </div>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                        <a href="/login.html" role="button" class="btn btn-default float-left">Zaloguj</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+
+
+</header>
+
+<section>
+    <div class="centered container-fluid">
+        <div class="row">
+            <div class="section col-sm-12 form-field ">
+                <div class="text-center form-title-font">Formularz zgłoszeniowy</div>
+                <form class="form-inline " action="/action_page.php">
+
+                    <div class="form-group offset-sm-2 col-sm-8 ">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="full_name" placeholder="Pełna nazwa" name="full_name">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="name" placeholder="Nazwa skrócona " name="name">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="nip" placeholder="NIP" name="nip"> 
+                    	
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="ulica" placeholder="Ulica" name="ulica">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="kod" placeholder="Kod pocztowy" name="kod">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="miasto" placeholder="Miasto" name="miasto"> 
+                    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="woj" placeholder="Województwo" name="woj">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="kraj" placeholder="Kraj" name="kraj">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="tel" placeholder="Telefon" name="tel"> 
+                    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="fax" placeholder="Fax" name="fax">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="email" placeholder="E-mail" name="email">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="www" placeholder="Strona WWW" name="www"> 
+                        Proszę wybrać branżę, która najbardziej odpowiada Państwa działalności:
+
+                    </div>
+                    
+                    
+                    <div class="form-font mar-top-3 mar-bot-3 offset-sm-2 col-sm-8 ">
+                            Proszę wybrać branżę, która najbardziej odpowiada Państwa działalności:
+                    </div> 
+                                        
+                        
+                    <div class="offset-sm-2 col-sm-4 ">
+                        <div class="row">                           
+                            <div class="col-sm">
+                                            <div class="FLOAT-CLEAR form-font">
+                                                Materiały biurowe
+                                            </div>  
+
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="papiery_i_etykiety" name="papiery_i_etykiety">
+                                        <span class="checkmark"></span><span class="checkmark-text">Papiery i etykiety</span>                                      
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="przybory_do_pisania" name="przybory_do_pisania">
+                                      <span class="checkmark"></span><span class="checkmark-text">Przybory do pisania</span>                                       
+                                    </label>
+                                </div>
+                               
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="galanteria_biurowa" name="galanteria_biurowa">
+                                      <span class="checkmark"></span><span class="checkmark-text">Galanteria biurowa</span>                                      
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="organizacja_dokumentow" name="organizacja_dokumentow">
+                                      <span class="checkmark"></span><span class="checkmark-text">Organizacja dokumentów</span>                                       
+                                    </label>
+                                </div>
+                                
+                                <div class=" form-check">
+                                    <label class=" container"><input type="checkbox" id="identyfikatory" name="identyfikatory">
+                                      <span class="checkmark"></span><span class="checkmark-text">Identyfikatory</span>                                       
+                                    </label>
+                                </div>
+                           
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="oprawa_dokumentow" name="oprawa_dokumentow">
+                                      <span class="checkmark"></span><span class="checkmark-text">Oprawa dokumentów</span>                                       
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="urzadzenia_kancelaryjne" name="urzadzenia_kancelaryjne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Urządzenia kancelaryjne</span>                                    
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="druki_akcydensowe" name="druki_akcydensowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Druki akcydensowe</span>                                      
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="maszyny_do_pisania" name="maszyny_do_pisania">
+                                      <span class="checkmark"></span><span class="checkmark-text">Maszyny do pisania</span>                                      
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">                           
+                            <div class="col-sm">                        
+                                <div>
+                                    <div class="form-font">
+                                        Usługi archiwistyczne
+                                    </div>  
+
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="porzadkowanie" name="porzadkowanie">
+                                      <span class="checkmark"></span><span class="checkmark-text">Porządkowanie</span>                                      
+                                    </label>
+                                    </div>  
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="brakowanie" name="brakowanie">
+                                      <span class="checkmark"></span><span class="checkmark-text">Brakowanie</span>                                     
+                                    </label>
+                                    </div>  
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="niszczenie_akt" name="niszczenie_akt">
+                                      <span class="checkmark"></span><span class="checkmark-text">Niszczenie akt</span>                                     
+                                    </label>
+                                    </div>  
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="przekazywanie_kat" name="przekazywanie_kat">
+                                      <span class="checkmark"></span><span class="checkmark-text">Przekazywanie kat. A do archiwum państwowego</span>                                      
+                                    </label>
+                                    </div>  
+                                    
+                                    
+                                </div>
+                             </div>   
+                        </div>
+                                
+                        <div class="row">                           
+                            <div class="col-sm">
+                                <div>
+                                    <div class="form-font">
+                                        Usługi archiwalne
+                                    </div>  
+
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="przechowywanie" name="przechowywanie">
+                                      <span class="checkmark"></span><span class="checkmark-text">Przechowywanie</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="sporzadzanie_wypisow" name="sporzadzanie_wypisow">
+                                      <span class="checkmark"></span><span class="checkmark-text">Sporządzanie wypisów, wyciągów i kserokopii</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="udostepnianie" name="udostepnianie">
+                                      <span class="checkmark"></span><span class="checkmark-text">Udostępnianie</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="row">                           
+                            <div class="col-sm">
+                                <div>
+                                    <div class="form-font">
+                                        Rozwiązania informatyczne
+                                    </div>  
+
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="oprogramowanie" name="oprogramowanie">
+                                      <span class="checkmark"></span><span class="checkmark-text">Oprogramowanie</span>                                   
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="sprzet_komputerowy" name="sprzet_komputerowy">
+                                      <span class="checkmark"></span><span class="checkmark-text">Sprzęt komputerowy (skanery, drukarki, etc)</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="akcesoria_komputerowe" name="akcesoria_komputerowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Akcesoria komputerowe</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="kody_kreskowe" name="kody_kreskowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Kody kreskowe</span>                                
+                                    </label>
+                                    </div>
+                                                                        
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="czytniki_kodow" name="czytniki_kodow">
+                                      <span class="checkmark"></span><span class="checkmark-text">Czytniki kodów kreskowych</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="monitoring" name="monitoring">
+                                      <span class="checkmark"></span><span class="checkmark-text">Monitoring</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="pamieci_masowe" name="pamieci_masowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Pamięci masowe</span>                                    
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="nosniki_magnetyczne" name="nosniki_magnetyczne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Nośniki magnetyczne</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div> 
+                    
+                    <div class="col-sm-4 ">
+                        <div class="row">                           
+                            <div class="col-sm">                        
+                                <div>
+                                    <div class="form-font">
+                                    Klimatyzacja
+                                    </div>  
+
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="wentylatory_elektryczne" name="wentylatory_elektryczne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Wentylatory elektryczne</span>                                    
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="osuszacze" name="osuszacze">
+                                      <span class="checkmark"></span><span class="checkmark-text">Osuszacze</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="urzadzenia_pomiarowe" name="urzadzenia_pomiarowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Urządzenia pomiarowe</span>                                    
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="higrostaty" name="higrostaty">
+                                      <span class="checkmark"></span><span class="checkmark-text">Higrostaty</span>                                   
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="nawietrzniki" name="nawietrzniki">
+                                      <span class="checkmark"></span><span class="checkmark-text">Nawietrzniki</span>                                    
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="wywietrzniki" name="wywietrzniki">
+                                      <span class="checkmark"></span><span class="checkmark-text">Wywietrzniki</span>                                   
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="czujniki" name="czujniki">
+                                      <span class="checkmark"></span><span class="checkmark-text">Czujniki</span>                                     
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="klimatyzatory" name="klimatyzatory">
+                                      <span class="checkmark"></span><span class="checkmark-text">Klimatyzatory</span>                                 
+                                    </label>
+                                    </div>
+                                    
+                                                                 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">                           
+                            <div class="col-sm">                        
+                                <div>
+                                    <div class="form-font">
+                                    Wyposażenie
+                                    </div>  
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="meble_biurowe" name="meble_biurowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Meble biurowe</span>                                 
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="odziez_ochronna" name="odziez_ochronna">
+                                      <span class="checkmark"></span><span class="checkmark-text">Odzież ochronna (specjalne obuwie, fartuchy,
+                                      rękawiczki gumowe, maseczka zabezpieczająca przed kurzem)</span>                                
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="materialy_sanitarne" name="materialy_sanitarne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Materiały sanitarne (apteczka)</span>                               
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="sprzet_p_poz" name="sprzet_p_poz">
+                                      <span class="checkmark"></span><span class="checkmark-text">Sprzęt p. poż. (gaśnice, koce azbestowe, worki ewakuacyjne)</span>                              
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="regaly_do_magazynowania" name="regaly_do_magazynowania">
+                                      <span class="checkmark"></span><span class="checkmark-text">Regały do magazynowania zwartego</span>                                
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="regaly_stacjonarne" name="regaly_stacjonarne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Regały stacjonarne</span>                                 
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="wozki_do_akt" name="wozki_do_akt">
+                                      <span class="checkmark"></span><span class="checkmark-text">Wózki do akt</span>                               
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="drabinki" name="drabinki">
+                                      <span class="checkmark"></span><span class="checkmark-text">Drabinki</span>                           
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="systemy_alarmowe" name="systemy_alarmowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Systemy alarmowe</span>                             
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="systemy_gaszenia_mgla" name="systemy_gaszenia_mgla">
+                                      <span class="checkmark"></span><span class="checkmark-text">Systemy gaszenia mgłą wodną</span>                                 
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="oswietlenie_awaryjne" name="oswietlenie_awaryjne">
+                                      <span class="checkmark"></span><span class="checkmark-text">Oświetlenie awaryjne</span>                                 
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="drzwi_antywlamaniowe" name="drzwi_antywlamaniowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Drzwi antywłamaniowe</span>                                
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="rolety_antywlamaniowe" name="rolety_antywlamaniowe">
+                                      <span class="checkmark"></span><span class="checkmark-text">Rolety antywłamaniowe</span>                              
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="specjalnie_wytapiane_szyby" name="specjalnie_wytapiane_szyby">
+                                      <span class="checkmark"></span><span class="checkmark-text">Specjalnie wytapiane szyby</span>                               
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="wyposazenie_pracowni_reprograficznej" name="wyposazenie_pracowni_reprograficznej">
+                                      <span class="checkmark"></span><span class="checkmark-text">Wyposażenie pracowni reprograficznej (kserografy, dokumatory)</span>                                
+                                    </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="niszczarki" name="niszczarki">
+                                      <span class="checkmark"></span><span class="checkmark-text">Niszczarki</span>                                 
+                                    </label>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">                           
+                            <div class="col-sm">
+                                <div>
+                                    <div class="form-font">
+                                        Działalność edukacyjna
+                                    </div>  
+
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="studia" name="studia">
+                                      <span class="checkmark"></span><span class="checkmark-text">Studia</span>                                 
+                                    </label>
+                                    </div> 
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="kursy" name="kursy">
+                                      <span class="checkmark"></span><span class="checkmark-text">Kursy</span>                               
+                                    </label>
+                                    </div> 
+                                    
+                                    <div class="form-check">
+                                    <label class=" container"><input type="checkbox" id="szkolenia" name="szkolenia">
+                                      <span class="checkmark"></span><span class="checkmark-text">Szkolenia</span>                              
+                                    </label>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div> 
+                    
+                    <div class="form-font mar-top-3 mar-bot-3 offset-sm-2 col-sm-8 ">
+                            Dane nie publikowane (wymagane do aktualizacji danych w katalogu):
+                    </div> 
+                    
+                    <div class="form-group offset-sm-2 col-sm-8 ">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="login" placeholder="Login" name="login">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="haslo" placeholder="Hasło " name="haslo">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="re_haslo" placeholder="Powtórz hasło" name="re_haslo"> 
+                    	
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="osoba" placeholder="Osoba do kontaktu" name="osoba">    
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="pryw_tel" placeholder="Telefon" name="pryw_tel">
+                        <input type="text" class="form-control mr-sm-2 col-sm" id="pryw_email" placeholder="Adres e-mail" name="pryw_email">   
+                    </div>
+                    
+                    <div class="form-font mar-top-3 offset-sm-2 col-sm-8 ">
+                            Prosimy o zapoznanie się z 
+                            <a href="http://www.archiwistyka.pl/szablony/archiwistykaNew/dokumenty/regulamin.doc">regulaminem</a> 
+                            serwisu archiwistyka.pl szczegółowo
+                            określającym warunki korzystania z usług świadczonych przez portal.
+                    </div> 
+                       
+                                               
+                    <div class="mar-bot-1 offset-sm-2 col-sm-8">
+                            <div class="float-clear form-check">
+                            <label class=" container"><input type="checkbox" id="akceptuje_regulamin" name="akceptuje_regulamin">
+                              <span class="checkmark"></span><span class="checkmark-text">Akceptuję regulamin portalu Archiwistyka.pl</span>                             
+                            </label>
+                            </div> 
+                    </div>
+                    
+                    <div class="pad-bot-5 offset-sm-2 col-sm-8">
+                        <button type="submit" class="btn btn-primary mb-2">Wyślij</button>
+                    </div>
+                    
+                    
+                   
+                </form>
+
+                
+            </div>
+        
+    </div>
+</section>
+
+
+
+<footer>
+	<div  style="background-color: #333333">
+		<div class="centered container-fluid">
+			<div  class="row" >
+		  		<div  class="footer-column col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">NASZE POZOSTAŁE PORTALE</div>   				
+		  			<div class="footer-col-1">		  				
+	    				<img class="footer-button" src="pics/dps.png"  alt="dps.pl">    				
+		  			</div>
+		  			<div class="footer-col-1">
+		  				<img class="footer-button" src="pics/arisco.png"  alt="arisco.pl">
+		  			</div>
+		  			<div class="footer-col-1">
+		  				<img class="footer-button" src="pics/azam.png"  alt="azam.pl">
+		  			</div>
+		  		</div>
+
+		  		<div  class="footer-column col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">O NAS</div>   				
+		  			<div class="footer-col-2 foot-ad-font text-justify">Firma ARISCO jest twórcą oprogramowania komputerowego opartego o najnowsze
+                                        technologie informatyczne. Nasze systemy przeznaczone są przede wszystkim dla
+                                        jednostek budżetowych. Działamy na rynku oprogramowania od 1989r.&nbsp;i na obecną
+                                        chwilę&nbsp;z naszych produktów korzysta ponad 3600 instytucji.</div>
+		  		</div>
+
+		  		<div  class="footer-column footer-column-3 col-sm-12 col-md-4">
+		  			<div class="foot-main-font text-center">KONTAKT</div>  				
+		  			
+		  			<div class="row mb-5">
+                                            <div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+                                                <img class="footer-icon img-fluid" src="pics/telefon.png" alt="telefon"/>
+                                            </div>
+                                            <div class="col-sm-8 col-md-8 col-xs-8">
+                                                <div class="foot-ad-font text-center">tel.: +48 42 648 03 00</div>
+                                                <div class="foot-ad-font text-center">fax: +48 42 648 03 01</div>
+
+                                                
+                                            </div>
+		  			</div>
+
+		  			<div  class="row mb-5" >
+		  				<div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+		  					<img class="footer-icon img-fluid" src="pics/swiat.png" alt="świat">
+		  				</div>
+		  				<div class="col-sm-8 col-md-8 col-xs-8">
+		  					<div class="foot-ad-font text-center">email: biuro@arisco.pl</div>
+		  					<div class="foot-ad-font text-center">strona: www.arisco.pl</div>		  					
+	  										
+	  					</div>
+		  			</div>
+
+					<div  class="row mb-5" >
+		  				<div class="offset-sm-2 offset-md-2 col-sm-2 col-md-2 col-xs-2 align-self-center text-center">
+		  					<img class="footer-icon img-fluid" src="pics/lokalizacja.png" alt="lokalizacja">
+		  				</div>
+		  				<div class="col-sm-8 col-md-8 col-xs-8">
+		  					<div class="foot-ad-font text-center">ARISCO Sp. z o.o.</div>
+		  					<div class="foot-ad-font text-center">al. Kościuszki 134</div>
+		  					<div class="foot-ad-font text-center">90-029 Łódź</div>	  					
+                                                                
+ 						</div>
+	  				</div>
+		  		</div>
+		  		
+		  	</div>
+                       
+                        <div class="container text-center">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-skype"></i></a>
+                        </div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="powered-by">
+			
+				Powered by Arisco Sp. z o.o.© Archiwistyka.pl 2008. Wszelkie prawa zastrzeżone
+			
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
